@@ -12,6 +12,7 @@ mensagemInicial();
 function exibirTexto(tag, texto) {
     let paragrafo = document.querySelector(tag);
     paragrafo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.0 });
 }
 
 //Função mensagem inicial:
