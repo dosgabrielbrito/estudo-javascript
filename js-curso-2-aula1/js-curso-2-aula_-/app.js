@@ -1,8 +1,11 @@
+//Setar variáveis:
+let listaNumerosSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
-console.log(numeroSecreto);
 
 //Iniciar jogo:
+console.log(numeroSecreto);
 mensagemInicial();
 
 //Função para exibir texto:
@@ -19,7 +22,20 @@ function mensagemInicial() {
 
 //Função para gerar número aleatório:
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 10 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeNumeros = listaNumerosSorteados.length;
+
+    if (quantidadeNumeros == numeroLimite) {
+        listaNumerosSorteados = [];
+    }
+
+    if (listaNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarNumeroAleatorio();
+    } else {
+        listaNumerosSorteados.push(numeroEscolhido);
+        console.log(listaNumerosSorteados);
+        return numeroEscolhido;
+    }
 }
 
 //Função de limpar o campo:

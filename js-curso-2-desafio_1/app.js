@@ -24,89 +24,107 @@
 
 //Exercício 2:
 
-function olaMundoConsole() {
-    console.log('Olá, mundo!');
-}
+// function olaMundoConsole() {
+//     console.log('Olá, mundo!');
+// }
 
-olaMundoConsole();
+// olaMundoConsole();
 
-function olaPessoaConsole(nome) {
-    console.log(`Olá, ${nome}!`);
-}
+// function olaPessoaConsole(nome) {
+//     console.log(`Olá, ${nome}!`);
+// }
 
-olaPessoaConsole('Gabriel');
+// olaPessoaConsole('Gabriel');
 
-function dobroNumero(numero) {
-    return 2 * numero;
-}
+// function dobroNumero(numero) {
+//     return 2 * numero;
+// }
 
-console.log(dobroNumero(2));
+// console.log(dobroNumero(2));
 
-function media3Numeros(n1, n2, n3) {
-    return ((n1 + n2 + n3) / 3);
-}
+// function media3Numeros(n1, n2, n3) {
+//     return ((n1 + n2 + n3) / 3);
+// }
 
-console.log(media3Numeros(6, 9, 12));
+// console.log(media3Numeros(6, 9, 12));
 
-function maiorNumero(n1, n2) {
-    if (n1 > n2) {
-        maior = n1;
-    } else {
-        maior = n2;
-    }
-    return maior;
-}
+// function maiorNumero(n1, n2) {
+//     if (n1 > n2) {
+//         maior = n1;
+//     } else {
+//         maior = n2;
+//     }
+//     return maior;
+// }
 
-console.log(maiorNumero(9, 100));
+// console.log(maiorNumero(9, 100));
 
-function quadradoNumero(numero) {
-    return numero * numero;
-}
+// function quadradoNumero(numero) {
+//     return numero * numero;
+// }
 
-console.log(quadradoNumero(12));
+// console.log(quadradoNumero(12));
 
-function massaCorporal(peso, altura) {
-    return peso / (altura * altura);
-}
+// function massaCorporal(peso, altura) {
+//     return peso / (altura * altura);
+// }
 
-console.log(massaCorporal(90, 1.82));
+//Exercício 3:
 
-function fatorialNumero(numero) {
-    contNum = numero;
-    fatNum = numero;
-    while (contNum > 1) {
-        fatNum = fatNum * (contNum - 1);
-        contNum--;
-    }
-    return fatNum;
-}
+// console.log(massaCorporal(90, 1.82));
 
-console.log(fatorialNumero(5));
+// function fatorialNumero(numero) {
+//     contNum = numero;
+//     fatNum = numero;
+//     while (contNum > 1) {
+//         fatNum = fatNum * (contNum - 1);
+//         contNum--;
+//     }
+//     return fatNum;
+// }
 
-function realParaDolar(real) {
-    return real * 4.80;
-}
+// console.log(fatorialNumero(5));
 
-console.log(realParaDolar(100));
+// function realParaDolar(real) {
+//     return real * 4.80;
+// }
 
-function areaPerimetroRet(altura, largura) {
-    return altura * largura;
-}
+// console.log(realParaDolar(100));
 
-console.log(areaPerimetroRet(2, 3));
+// function areaPerimetroRet(altura, largura) {
+//     return altura * largura;
+// }
 
-function areaPerimetroCir(diametro) {
-    return 3.14 * (diametro * diametro) / 4;
-}
+// console.log(areaPerimetroRet(2, 3));
 
-console.log(areaPerimetroCir(4));
+// function areaPerimetroCir(diametro) {
+//     return 3.14 * (diametro * diametro) / 4;
+// }
 
-function tabuadaNumero(numero) {
-    contNum = 0;
-    while (contNum <= 10) {
-        console.log(contNum * numero);
-        contNum++;
-    }
-}
+// console.log(areaPerimetroCir(4));
 
-tabuadaNumero(8);
+// function tabuadaNumero(numero) {
+//     contNum = 0;
+//     while (contNum <= 10) {
+//         console.log(contNum * numero);
+//         contNum++;
+//     }
+// }
+
+// tabuadaNumero(8);
+
+//Exercício 4:
+
+listaGenerica = [];
+
+linguagensProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+
+linguagensProgramacao.push('Java', 'Ruby', 'GoLang');
+
+listaNomes = ['João', 'José', 'Maria'];
+
+console.log(listaNomes[0]);
+
+console.log(listaNomes[1]);
+
+console.log(listaNomes[listaNomes.length - 1]);
